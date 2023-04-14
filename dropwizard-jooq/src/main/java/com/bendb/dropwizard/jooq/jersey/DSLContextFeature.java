@@ -4,8 +4,8 @@ import com.google.common.base.Preconditions;
 import org.jooq.Configuration;
 
 import javax.annotation.Nonnull;
-import javax.ws.rs.core.Feature;
-import javax.ws.rs.core.FeatureContext;
+import jakarta.ws.rs.core.Feature;
+import jakarta.ws.rs.core.FeatureContext;
 import java.util.SortedMap;
 
 public class DSLContextFeature implements Feature {

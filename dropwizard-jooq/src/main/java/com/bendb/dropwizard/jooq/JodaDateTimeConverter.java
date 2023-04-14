@@ -1,25 +1,27 @@
 package com.bendb.dropwizard.jooq;
 
-import org.joda.time.DateTime;
 import org.jooq.Converter;
 
 import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.temporal.Temporal;
 
 /**
- * A {@link org.jooq.Converter} for {@link org.joda.time.DateTime} objects.
+ * A {@link org.jooq.Converter} for {@link DateTime} objects.
  */
-public class JodaDateTimeConverter implements Converter<Timestamp, DateTime> {
+public class JodaDateTimeConverter implements Converter<Timestamp, LocalDateTime> {
     @Override
-    public DateTime from(Timestamp timestamp) {
+    public LocalDateTime from(Timestamp timestamp) {
         return timestamp != null
-                ? new DateTime(timestamp.getTime())
+                ? new LocalDateTime(timestamp.getTime())
                 : null;
     }
 
     @Override
-    public Timestamp to(DateTime dateTime) {
+    public Timestamp to(LocalDateTime dateTime) {
         return dateTime != null
-                ? new Timestamp(dateTime.getMillis())
+                ? new Timestamp(dateTime.toLocalTime().toNanoOfDay())
                 : null;
     }
 
@@ -29,7 +31,7 @@ public class JodaDateTimeConverter implements Converter<Timestamp, DateTime> {
     }
 
     @Override
-    public Class<DateTime> toType() {
-        return DateTime.class;
+    public Class<LocalDateTime> toType() {
+        return LocalDateTime.class;
     }
 }

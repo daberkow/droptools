@@ -4,7 +4,8 @@ import com.google.common.base.Optional;
 import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.db.ManagedDataSource;
 import io.dropwizard.db.PooledDataSourceFactory;
-import io.dropwizard.setup.Environment;
+import io.dropwizard.core.setup.Environment;
+import jakarta.validation.constraints.NotNull;
 import org.jooq.Configuration;
 import org.jooq.ConnectionProvider;
 import org.jooq.SQLDialect;
@@ -16,8 +17,6 @@ import org.jooq.conf.StatementType;
 import org.jooq.impl.DataSourceConnectionProvider;
 import org.jooq.impl.DefaultConfiguration;
 import org.jooq.tools.jdbc.JDBCUtils;
-
-import javax.validation.constraints.NotNull;
 
 /**
  * A factory for jOOQ {@link org.jooq.Configuration} objects.
