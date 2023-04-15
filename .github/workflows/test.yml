@@ -22,6 +22,7 @@ jobs:
       run: |
         sudo -u postgres psql --command="create database example_app;"
         sudo -u postgres psql --command="create user example_user with password 's3cr3t';"
+        pwd
         sudo -u postgres psql -d example_app -U postgres -f droptools-example/src/main/resources/db/migration/20141010__init.sql
         sudo -u postgres psql --command="grant all on database example_app to example_user;"
         sudo -u postgres psql --command="CREATE USER testuser PASSWORD 'password';"
