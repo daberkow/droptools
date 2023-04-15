@@ -1,4 +1,4 @@
-name: Run Gradle on Push
+name: Test Build
 on: [push]
 jobs:
   gradle:
