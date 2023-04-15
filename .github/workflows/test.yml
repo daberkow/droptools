@@ -27,7 +27,7 @@ jobs:
         sudo -u postgres psql -d example_app -U postgres -f /tmp/20141010__init.sql
         sudo -u postgres psql --command="grant all on database example_app to example_user;"
         sudo -u postgres psql --command="CREATE USER testuser PASSWORD 'password';"
-        sudo -u postgres psql --command="grant all on all tables in schema ex to example_user'" -d example_app
+        sudo -u postgres psql --command="grant all on all tables in schema ex to example_user" -d example_app
 
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
