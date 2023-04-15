@@ -7,7 +7,7 @@ import io.dropwizard.core.ConfiguredBundle;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
 import io.dropwizard.db.PooledDataSourceFactory;
-import io.dropwizard.core.Configuration;
+import org.jooq.Configuration;
 import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -17,7 +17,7 @@ public abstract class JooqBundle<C extends io.dropwizard.core.Configuration>
 
     private static final String DEFAULT_NAME = "jooq";
 
-    private final SortedMap<String,Configuration> jooqFactoryConfigurationMap = new TreeMap<>();
+    private final SortedMap<String, Configuration> jooqFactoryConfigurationMap = new TreeMap<>();
 
     public void initialize(Bootstrap<?> bootstrap) {
         // No bootstrap-phase action required.

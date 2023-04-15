@@ -3,9 +3,10 @@ package com.bendb.dropwizard.jooq.jersey;
 import com.google.common.base.Preconditions;
 import org.jooq.Configuration;
 
-import javax.annotation.Nonnull;
 import jakarta.ws.rs.core.Feature;
 import jakarta.ws.rs.core.FeatureContext;
+
+import javax.annotation.Nonnull;
 import java.util.SortedMap;
 
 public class DSLContextFeature implements Feature {
