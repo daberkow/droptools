@@ -1,3 +1,9 @@
+project.ext.libraryVer="1.0.0"
+
+apply from: file("$rootDir/versions.gradle")
+
+project.ext.VERSION=libraryVer.replace(".", "") + "." + project.ext.dropwizardVersion.replace(".", "") + "." + project.ext.jooqVersion.replace(".", "")
+
 allprojects {
     repositories {
         mavenCentral()
@@ -7,8 +13,6 @@ allprojects {
     version VERSION
 
     project.ext {
-        dropwizardVersion = "3.0.0"
-        jooqVersion = "3.16.18"
         jedisVersion = "3.0.1"
         postgresPluginVer = "42.6.0"
 

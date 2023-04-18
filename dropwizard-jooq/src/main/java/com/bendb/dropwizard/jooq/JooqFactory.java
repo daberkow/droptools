@@ -23,7 +23,8 @@ import javax.validation.constraints.NotNull;
  * A factory for jOOQ {@link org.jooq.Configuration} objects.
  * <p>
  * <strong>Configuration Parameters</strong>
- * <table summary="Descriptions of all JooqFactory parameters">
+ * <table>
+ *     <caption>Descriptions of all JooqFactory parameters</caption>
  *     <tr>
  *         <th>Name</th>
  *         <th>Default</th>
