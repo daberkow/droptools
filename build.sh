@@ -13,7 +13,7 @@ for fn in `cat build_versions.txt`; do
     find ./drop* -type f -exec sed -i "s/javax.validation.constraints.NotNull/jakarta.validation.constraints.NotNull/g" {} +
     find ./drop* -type f -exec sed -i "s/javax.ws.rs./jakarta.ws.rs./g" {} +
     find ./dropwizard-jooq/src/main/java -type f -exec sed -i "s/javax.inject.Singleton/jakarta.inject.Singleton/g" {} +
-  elif
+  else
     find ./dropwizard-jooq/src/main/java -type f -exec sed -i "s/jakarta.ws.rs.ext.Provider/javax.ws.rs.ext.Provider/g" {} +
     find ./drop* -type f -exec sed -i "s/jakarta.validation.constraints.NotNull/javax.validation.constraints.NotNull/g" {} +
     find ./drop* -type f -exec sed -i "s/jakarta.ws.rs./javax.ws.rs./g" {} +
@@ -23,7 +23,7 @@ for fn in `cat build_versions.txt`; do
   if [ "${ver2:2:2}" = "18" ]; then
     sed -i "s/sourceCompatibility = \"11\"/sourceCompatibility = \"17\"/g" build.gradle
     sed -i "s/targetCompatibility = \"11\"/targetCompatibility = \"17\"/g" build.gradle
-  elif
+  else
     sed -i "s/sourceCompatibility = \"17\"/sourceCompatibility = \"11\"/g" build.gradle
     sed -i "s/targetCompatibility = \"17\"/targetCompatibility = \"11\"/g" build.gradle
   fi
