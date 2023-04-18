@@ -44,6 +44,16 @@ jobs:
         sleep 20
         curl http://127.0.0.1:8080/posts
 
+    - name: Build Versions
+      run: |
+        ./build.sh
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      if: always() # always run even if the previous step fails
+      with:
+        name: build-artifacts
+        path: /tmp/artifactz/*
     - name: Upload build reports
       uses: actions/upload-artifact@v3
       if: always() # always run even if the previous step fails
