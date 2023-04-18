@@ -1,0 +1,2 @@
+project.ext.dropwizardVersion="3.0.0"
+project.ext.jooqVersion="3.16.18"
