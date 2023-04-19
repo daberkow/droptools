@@ -72,7 +72,7 @@ publishing {
 
             pom {
                 name = 'dropwizard-jooq'
-                description = rootProject.description
+                description = project.description
                 url = 'https://github.com/daberkow/droptools'
                 licenses {
                     license {
