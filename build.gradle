@@ -1,6 +1,7 @@
 project.ext.libraryVer="1.0.0"
 // Make the libraryVerSnapshot var empty to publish to prod
-project.ext.libraryVerSnapshot="-SNAPSHOT"
+// project.ext.libraryVerSnapshot="-SNAPSHOT"
+project.ext.libraryVerSnapshot=""
 
 apply from: file("$rootDir/versions.gradle")
 
