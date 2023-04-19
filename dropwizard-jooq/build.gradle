@@ -8,8 +8,8 @@ description = "Addon bundle for Dropwizard to support jOOQ for database access"
 
 dependencies {
     api libs.jooq
-    implementation libs.dropwizardDb
-    implementation libs.dropwizardCore
+    api libs.dropwizardDb
+    api libs.dropwizardCore
 
     testImplementation libs.testing
 }
