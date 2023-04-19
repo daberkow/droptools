@@ -28,14 +28,15 @@ for fn in `cat build_versions.txt`; do
     sed -i "s/targetCompatibility = \"17\"/targetCompatibility = \"11\"/g" build.gradle
   fi
 
+  set -e
   if [ "$1" = "publish" ]; then
     echo "Publishing"
-    set -e
     ./gradlew clean generatejooq build dropwizard-jooq:publish
   else
     echo "Not publishing"
     ./gradlew clean generatejooq build
   fi
+  set +e
 
   myVer=$(cat ./dropwizard-jooq/src/main/resources/version.properties | grep version | sed -r "s/version=(.*)/\1/")
   mkdir /tmp/artifactz
