@@ -1,6 +1,6 @@
 package com.bendb.example.resources;
 
-import com.bendb.dropwizard.jooq.jersey.JooqInject;
+import co.ntbl.dropwizard.jooq.jersey.JooqInject;
 import com.bendb.example.core.BlogPost;
 import com.bendb.example.db.tables.PostTag;
 import com.bendb.example.db.tables.records.BlogPostRecord;
@@ -17,7 +17,7 @@ import javax.ws.rs.core.UriBuilder;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.bendb.dropwizard.jooq.PostgresSupport.arrayAgg;
+import static co.ntbl.dropwizard.jooq.PostgresSupport.arrayAgg;
 import static com.bendb.example.db.Tables.BLOG_POST;
 import static com.bendb.example.db.Tables.POST_TAG;
 import static org.jooq.impl.DSL.*;

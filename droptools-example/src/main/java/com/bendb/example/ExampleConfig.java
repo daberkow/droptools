@@ -1,6 +1,6 @@
 package com.bendb.example;
 
-import com.bendb.dropwizard.jooq.JooqFactory;
+import co.ntbl.dropwizard.jooq.JooqFactory;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.dropwizard.core.Configuration;
 import io.dropwizard.db.DataSourceFactory;
