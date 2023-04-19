@@ -40,8 +40,9 @@ jobs:
       env:
         GPG_SIGNING_KEY: ${{ secrets.GPG_SIGNING_KEY }}
         GPG_SIGNING_PASSPHRASE: ${{ secrets.GPG_SIGNING_PASSPHRASE }}
-    - name: Run snapshot action
-      uses: mikepenz/gradle-dependency-submission@{latest}
+    - name: Gradle Dependency Submission
+      uses: mikepenz/gradle-dependency-submission@v0.8.6
+
     - name: Run webapp in the background
       run: |
         ./gradlew droptools-example:run &
