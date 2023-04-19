@@ -35,7 +35,7 @@ classes {
 jar {
     manifest {
         attributes(
-                "Class-Path": "com.bendb.dropwizard",
+                "Class-Path": "co.ntbl.dropwizard",
                 "Implementation-Title": project.name,
                 "Implementation-Version": version,
                 "Implementation-Vendor": "Daniel Berkowitz",
