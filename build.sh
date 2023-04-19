@@ -30,7 +30,7 @@ for fn in `cat build_versions.txt`; do
 
   if [ "$1" = "publish" ]; then
     echo "Publishing"
-    ./gradlew clean generatejooq build publish
+    ./gradlew clean generatejooq build dropwizard-jooq:publish
   else
     echo "Not publishing"
     ./gradlew clean generatejooq build

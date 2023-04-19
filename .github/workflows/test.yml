@@ -6,6 +6,8 @@ jobs:
       matrix:
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
+    permissions: # The Dependency Submission API requires write permission
+      contents: write
     # runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
@@ -38,6 +40,8 @@ jobs:
       env:
         GPG_SIGNING_KEY: ${{ secrets.GPG_SIGNING_KEY }}
         GPG_SIGNING_PASSPHRASE: ${{ secrets.GPG_SIGNING_PASSPHRASE }}
+    - name: Run snapshot action
+      uses: mikepenz/gradle-dependency-submission@{latest}
     - name: Run webapp in the background
       run: |
         ./gradlew droptools-example:run &
