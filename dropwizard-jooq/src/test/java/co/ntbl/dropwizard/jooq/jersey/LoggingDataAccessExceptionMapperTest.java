@@ -1,5 +1,6 @@
-package com.bendb.dropwizard.jooq.jersey;
+package co.ntbl.dropwizard.jooq.jersey;
 
+import co.ntbl.dropwizard.jooq.jersey.LoggingDataAccessExceptionMapper;
 import org.jooq.exception.DataAccessException;
 import org.junit.After;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-package com.bendb.dropwizard.jooq;
+package co.ntbl.dropwizard.jooq;
 
 import com.google.common.collect.ImmutableSortedMap;
 import io.dropwizard.core.Configuration;

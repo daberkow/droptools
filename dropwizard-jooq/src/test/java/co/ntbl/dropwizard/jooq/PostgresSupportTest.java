@@ -1,4 +1,4 @@
-package com.bendb.dropwizard.jooq;
+package co.ntbl.dropwizard.jooq;
 
 import org.jooq.Field;
 import org.jooq.test.data.Table1;
@@ -10,7 +10,7 @@ public class PostgresSupportTest {
     @Test
     public void appliesArrayAggGroupingFunction() {
         Field<Integer[]> agg = PostgresSupport.arrayAgg(Table1.FIELD_ID1);
-        assertThat(agg.toString()).isEqualTo("array_agg(" + Table1.FIELD_ID1.toString() + ")");
+        assertThat(agg.toString()).isEqualTo("array_agg(" + Table1.FIELD_ID1 + ")");
     }
 
     @Test

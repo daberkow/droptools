@@ -1,6 +1,6 @@
-package com.bendb.dropwizard.jooq;
+package co.ntbl.dropwizard.jooq;
 
-import com.bendb.dropwizard.jooq.jersey.JooqBinder;
+import co.ntbl.dropwizard.jooq.jersey.JooqBinder;
 import com.codahale.metrics.health.HealthCheckRegistry;
 import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.jersey.setup.JerseyEnvironment;

@@ -1,4 +1,4 @@
-package com.bendb.dropwizard.jooq.jersey;
+package co.ntbl.dropwizard.jooq.jersey;
 
 import org.glassfish.hk2.api.Factory;
 import org.jooq.Configuration;

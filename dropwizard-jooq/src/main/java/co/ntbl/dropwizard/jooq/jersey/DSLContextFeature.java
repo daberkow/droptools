@@ -1,4 +1,4 @@
-package com.bendb.dropwizard.jooq.jersey;
+package co.ntbl.dropwizard.jooq.jersey;
 
 import com.google.common.base.Preconditions;
 import org.jooq.Configuration;

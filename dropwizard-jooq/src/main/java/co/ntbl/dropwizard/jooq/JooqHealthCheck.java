@@ -1,4 +1,4 @@
-package com.bendb.dropwizard.jooq;
+package co.ntbl.dropwizard.jooq;
 
 import com.codahale.metrics.health.HealthCheck;
 import org.jooq.Configuration;

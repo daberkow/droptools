@@ -36,7 +36,6 @@ jar {
     manifest {
         attributes(
                 "Class-Path": "com.bendb.dropwizard",
-                "Main-Class": "dropwizard-jooq",
                 "Implementation-Title": project.name,
                 "Implementation-Version": version,
                 "Implementation-Vendor": "Daniel Berkowitz",

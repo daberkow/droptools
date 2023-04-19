@@ -1,4 +1,4 @@
-package com.bendb.dropwizard.jooq;
+package co.ntbl.dropwizard.jooq;
 
 import com.codahale.metrics.health.HealthCheck;
 import org.jooq.Configuration;
@@ -17,7 +17,7 @@ import static com.google.common.truth.Truth.assertThat;
 import static com.google.common.truth.Truth.assert_;
 
 public class JooqHealthCheckTest {
-    private String validationQuery = "this is a query";
+    private final String validationQuery = "this is a query";
 
     @Test
     public void isHealthyIfNoExceptionIsThrown() throws Exception {

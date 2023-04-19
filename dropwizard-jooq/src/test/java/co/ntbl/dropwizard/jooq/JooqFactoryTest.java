@@ -1,4 +1,4 @@
-package com.bendb.dropwizard.jooq;
+package co.ntbl.dropwizard.jooq;
 
 import com.codahale.metrics.MetricRegistry;
 import com.google.common.base.Optional;
@@ -7,11 +7,8 @@ import io.dropwizard.db.ManagedDataSource;
 import io.dropwizard.lifecycle.setup.LifecycleEnvironment;
 import io.dropwizard.core.setup.Environment;
 import org.jooq.Configuration;
-import org.jooq.ExecuteListener;
-import org.jooq.ExecuteListenerProvider;
 import org.jooq.SQLDialect;
 import org.jooq.impl.DataSourceConnectionProvider;
-import org.jooq.impl.DefaultExecuteListenerProvider;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

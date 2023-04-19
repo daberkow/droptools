@@ -1,7 +1,7 @@
 #!/bin/bash
-set -x 
+set -x
 
-for fn in `cat build_versions.txt`; do 
+for fn in `cat build_versions.txt`; do
   ver1=$(echo $fn | sed -r "s/(.*):(.*)/\1/");
   echo "project.ext.dropwizardVersion=\"$ver1\"" > versions.gradle;
   ver2=$(echo $fn | sed -r "s/(.*):(.*)/\2/");
@@ -28,11 +28,18 @@ for fn in `cat build_versions.txt`; do
     sed -i "s/targetCompatibility = \"17\"/targetCompatibility = \"11\"/g" build.gradle
   fi
 
-  ./gradlew clean generatejooq build
+  if [ "$1" = "publish" ]; then
+    echo "Publishing"
+    ./gradlew clean generatejooq build publish
+  else
+    echo "Not publishing"
+    ./gradlew clean generatejooq build
+  fi
+
   myVer=$(cat ./dropwizard-jooq/src/main/resources/version.properties | grep version | sed -r "s/version=(.*)/\1/")
   mkdir /tmp/artifactz
   mkdir /tmp/artifactz/$myVer
 
-  cp ./dropwizard-jooq/build/libs/* /tmp/artifactz/$myVer/ 
+  cp ./dropwizard-jooq/build/libs/* /tmp/artifactz/$myVer/
 done
 

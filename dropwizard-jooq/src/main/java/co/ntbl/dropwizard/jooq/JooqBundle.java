@@ -1,10 +1,8 @@
-package com.bendb.dropwizard.jooq;
+package co.ntbl.dropwizard.jooq;
 
-import com.bendb.dropwizard.jooq.jersey.DSLContextFeature;
-import com.bendb.dropwizard.jooq.jersey.JooqBinder;
-import com.bendb.dropwizard.jooq.jersey.LoggingDataAccessExceptionMapper;
+import co.ntbl.dropwizard.jooq.jersey.DSLContextFeature;
+import co.ntbl.dropwizard.jooq.jersey.LoggingDataAccessExceptionMapper;
 import io.dropwizard.core.ConfiguredBundle;
-import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.db.PooledDataSourceFactory;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;

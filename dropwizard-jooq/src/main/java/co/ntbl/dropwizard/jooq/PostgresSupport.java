@@ -1,4 +1,4 @@
-package com.bendb.dropwizard.jooq;
+package co.ntbl.dropwizard.jooq;
 
 import org.jooq.Field;
 import org.jooq.SQLDialect;

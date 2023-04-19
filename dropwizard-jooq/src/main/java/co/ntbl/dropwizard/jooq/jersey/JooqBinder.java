@@ -1,4 +1,4 @@
-package com.bendb.dropwizard.jooq.jersey;
+package co.ntbl.dropwizard.jooq.jersey;
 
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 import org.glassfish.jersey.process.internal.RequestScoped;
@@ -11,7 +11,7 @@ import java.util.SortedMap;
 
 /**
  * Create bindings for {@link DSLContext} (via
- * {@link com.bendb.dropwizard.jooq.jersey.DSLContextFactory}),
+ * {@link co.ntbl.dropwizard.jooq.jersey.DSLContextFactory}),
  * {@link org.jooq.Configuration}, and {@link org.jooq.ConnectionProvider}.
  */
 public class JooqBinder extends AbstractBinder {

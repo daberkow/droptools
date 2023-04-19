@@ -1,4 +1,4 @@
-package com.bendb.dropwizard.jooq.jersey;
+package co.ntbl.dropwizard.jooq.jersey;
 
 import org.jooq.Configuration;
 import org.jooq.DSLContext;

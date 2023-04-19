@@ -12,9 +12,9 @@ Dependency Info
 
 ```xml
 <dependency>
-  <groupId>com.bendb.dropwizard</groupId>
+  <groupId>co.ntbl.dropwizard</groupId>
   <artifactId>dropwizard-jooq</artifactId>
-  <version>2.0.2-0</version>
+  <version>100.300.3168</version>
 </dependency>
 ```
 
@@ -64,7 +64,7 @@ Finally, because I <3 postgres and jOOQ can lag behind some of its features, `Po
 For example (taken from the sample project):
 
 ```java
-import static com.bendb.dropwizard.jooq.PostgresSupport.arrayAgg;
+import static co.ntbl.dropwizard.jooq.PostgresSupport.arrayAgg;
 
 database
     .select(BLOG_POST.ID, BLOG_POST.BODY, BLOG_POST.CREATED_AT, arrayAgg(POST_TAG.TAG_NAME))
@@ -127,7 +127,7 @@ jooq:
 Support
 -------
 
-Please file bug reports and feature requests in [GitHub issues](https://github.com/benjamin-bader/droptools/issues).
+Please file bug reports and feature requests in [GitHub issues](https://github.com/daberkow/droptools/issues).
 
 
 License

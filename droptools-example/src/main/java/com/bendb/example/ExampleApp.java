@@ -1,7 +1,7 @@
 package com.bendb.example;
 
-import com.bendb.dropwizard.jooq.JooqBundle;
-import com.bendb.dropwizard.jooq.JooqFactory;
+import co.ntbl.dropwizard.jooq.JooqBundle;
+import co.ntbl.dropwizard.jooq.JooqFactory;
 import com.bendb.example.resources.PostsResource;
 import io.dropwizard.core.Application;
 import io.dropwizard.db.DataSourceFactory;
