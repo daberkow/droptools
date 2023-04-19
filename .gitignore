@@ -21,6 +21,7 @@ logs/
 # Gradle
 .gradle/
 build/
+bin/
 
 # MkDocs
 site/

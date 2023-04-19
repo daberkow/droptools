@@ -8,16 +8,12 @@ to pass builds, yet I can not promise any other operations.
 
 [![Build Status](https://github.com/daberkow/droptools/actions/workflows/test.yml/badge.svg)](https://github.com/daberkow/droptools/actions/workflows/test.yml)
 
+[Maven Central information](https://central.sonatype.com/artifact/co.ntbl.dropwizard/dropwizard-jooq/)
+
 [`dropwizard-jooq`](docs/jooq.md)
 -----------------
 
 A bundle that adds support for relational database access via the excellent [jOOQ](http://jooq.org) library.
-
-[`dropwizard-redis`](docs/redis.md)
-------------------
-
-A bundle that manages a redis connection pool and makes [Jedis](https://github.com/xetorthio/jedis) clients available to
-resource methods, without the hassle of pooling logic in your code.
 
 Key Features
 ------------

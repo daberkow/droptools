@@ -1,14 +1,15 @@
 Dropwizard jOOQ Bundle
 ======================
 
-[![Build Status](https://travis-ci.org/benjamin-bader/droptools.svg?branch=master)](https://travis-ci.org/benjamin-bader/droptools)
-[![Coverage Status](https://img.shields.io/coveralls/benjamin-bader/droptools.svg)](https://coveralls.io/r/benjamin-bader/droptools?branch=master)
+[![Build Status](https://github.com/daberkow/droptools/actions/workflows/test.yml/badge.svg)](https://github.com/daberkow/droptools/actions/workflows/test.yml)
 
 An addon bundle in the vein of `dropwizard-hibernate` for using the excellent jOOQ SQL library in Dropwizard applications.
 
 
 Dependency Info
 ---------------
+
+[Maven Central information](https://central.sonatype.com/artifact/co.ntbl.dropwizard/dropwizard-jooq/)
 
 ```xml
 <dependency>
